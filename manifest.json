@@ -1,0 +1,9 @@
+{
+  "id": "kindle-pdf-export",
+  "name": "Kindle PDF",
+  "version": "1.2.0",
+  "minAppVersion": "0.15.0",
+  "description": "Convert markdown to PDF and send directly to Kindle via email — no external server required",
+  "author": "Joao Rodrigues",
+  "isDesktopOnly": true
+}

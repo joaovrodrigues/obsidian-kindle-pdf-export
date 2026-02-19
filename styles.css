@@ -1,0 +1,88 @@
+/* ── Progress Modal ──────────────────────────────────────────────── */
+
+.kindle-pdf-progress-modal {
+  padding: 16px;
+}
+
+.kindle-pdf-progress-modal h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.2em;
+}
+
+.kindle-pdf-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kindle-pdf-stage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.kindle-pdf-stage.is-active {
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+.kindle-pdf-stage.is-done {
+  color: var(--text-muted);
+}
+
+.kindle-pdf-stage.is-error {
+  color: var(--text-error, #e53935);
+}
+
+.kindle-pdf-stage-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.kindle-pdf-stage.is-active .kindle-pdf-stage-icon {
+  border: 2px solid var(--interactive-accent);
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: kindle-pdf-spin 0.8s linear infinite;
+}
+
+.kindle-pdf-stage.is-done .kindle-pdf-stage-icon {
+  color: var(--interactive-accent);
+}
+
+.kindle-pdf-stage.is-error .kindle-pdf-stage-icon {
+  color: var(--text-error, #e53935);
+}
+
+@keyframes kindle-pdf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.kindle-pdf-success {
+  margin-top: 16px;
+  padding: 8px 12px;
+  background: var(--background-modifier-success, #e8f5e9);
+  color: var(--text-success, #2e7d32);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.kindle-pdf-error {
+  margin-top: 16px;
+  padding: 8px 12px;
+  background: var(--background-modifier-error, #ffebee);
+  color: var(--text-error, #e53935);
+  border-radius: 6px;
+}

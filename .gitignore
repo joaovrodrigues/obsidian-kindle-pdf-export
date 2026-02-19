@@ -1,0 +1,14 @@
+# Build output
+main.js
+
+# npm
+node_modules
+
+# Obsidian plugin data
+data.json
+
+# npm debug logs
+npm-debug.log*
+
+# OS files
+.DS_Store
